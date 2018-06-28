@@ -1,0 +1,66 @@
+{
+    "database":{
+        "redis": {
+            "main": {
+                "host": "127.0.0.1",
+                "port": 6379,
+                "db": 0,
+                "max_connections": 8
+            },
+            "msgbus": {
+                "host": "127.0.0.1",
+                "port": 6379,
+                "db": 8,
+                "max_connections": 8
+            },
+            "livetime":{
+                "host": "127.0.0.1",
+                "port": 6379,
+                "db": 1,
+                "max_connections": 8
+            },
+            "session":{
+                "host": "127.0.0.1",
+                "port": 6379,
+                "db": 5,
+                "max_connections": 8
+            }
+        },
+        "mysql":{
+            "database_r":{
+                "host": "127.0.0.1",
+                "db":"yourdatabase",
+                "charset":"utf8",
+                "user":"username",
+                "passwd":"password",
+                "cached":12
+            },
+            "database_w":{
+                "host": "127.0.0.1",
+                "db":"yourdatabase",
+                "charset":"utf8",
+                "user":"username",
+                "passwd":"password",
+                "cached":12
+            }
+        },
+        "mongodb": {
+            "database": {
+                "host": "mongodb://database_rw:database_rw@127.0.0.1:27017/database",
+                "maxPoolSize":100,
+                "socketKeepAlive": true
+             }
+        }
+    },
+    "backends": {
+        "rabbitmq":{
+            "msgbus": {
+                "host":"127.0.0.1",
+                "port": 5672,
+                "consumer_num": {
+                    "HelloWorld": 2
+                }
+            }
+        }
+    }
+}
