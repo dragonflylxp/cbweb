@@ -1,5 +1,9 @@
 # cbweb
 一个基于tornado的web开发框架
+* 支持http restful API服务
+* 支持websocket长连接服务
+* 支持异步消息发布订阅服务
+* 支持定时任务服务
 
 ## 环境要求
 * Git
