@@ -35,7 +35,7 @@ itsdangerous==0.24
 jedi==0.11.1
 Jinja2==2.10
 lru-dict==1.1.6
-lxml==4.2.1
+lxml==4.6.2
 MarkupSafe==1.0
 Naked==0.1.31
 parso==0.1.1
