@@ -47,7 +47,7 @@ Pillow==5.0.0
 pluggy==0.6.0
 prompt-toolkit==1.0.15
 ptyprocess==0.5.2
-py==1.5.2
+py==1.10.0
 py-solc==2.1.0
 pycrypto==2.6.1
 pycurl==7.43.0.1
